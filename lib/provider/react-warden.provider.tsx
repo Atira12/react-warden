@@ -6,7 +6,7 @@ const ReactWardenProvider: FC<ReactWardenPropsInterface> = ({
   children,
   roles: userRoles = [],
   permissions: userPermissions = [],
-  fallback,
+  fallback = null,
 }) => {
   const roles = useMemo(() => new Set(userRoles), [userRoles]);
   const permissions = useMemo(
