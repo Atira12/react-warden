@@ -1,0 +1,48 @@
+{
+  "name": "react-warden",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Lightweight RBAC for React",
+  "author": "Atira12",
+  "repository": "Atira12/react-rbac",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest",
+    "build": "tsc --declaration -p tsconfig.build.json",
+    "build:full": " npm run build && npm pack"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.1.0",
+    "@types/jest": "^29.5.8",
+    "@types/react": "^18.2.37",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "esbuild": "^0.19.5",
+    "eslint": "^8.51.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-transform-stub": "^2.0.0",
+    "ts-jest": "^29.1.1",
+    "react": "^18.2.0",
+    "typescript": "^5.2.2",
+    "react-dom": "^18.2.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "react",
+    "rbac",
+    "typescript",
+    "npm"
+  ]
+}
